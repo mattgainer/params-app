@@ -6,7 +6,7 @@ class PagesController < ApplicationController
 
   def number
     @guess = params[:number].to_i
-    if params[:new] == "true"
+    if params[:new].present?
       Randnum.create(random_number: rand(100))
     end
     @number = Randnum.last.random_number

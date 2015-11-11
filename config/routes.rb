@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
   get '/:name', to: 'pages#name'
-  get '/number/:number/:new', to: 'pages#number'
+  get '/number/:number', to: 'pages#number'
   get '/setnum', to: 'pages#set_number'
 
   # The priority is based upon order of creation: first created -> highest priority.

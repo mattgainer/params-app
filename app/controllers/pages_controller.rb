@@ -1,7 +1,7 @@
 class PagesController < ApplicationController
 
   def name
-    @name = params[:name]
+    @name = params[:name].upcase
   end
 
   def number
@@ -11,7 +11,7 @@ class PagesController < ApplicationController
     end
     @number = Randnum.last.random_number
   end
-  
+
   def set_number
     Randnum.create(random_number: rand(100))
   end

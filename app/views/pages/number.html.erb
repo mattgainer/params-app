@@ -1,12 +1,4 @@
 <p>
   Your Guess Was: <%= @guess %>
 </p>
-<p>
-  <% if @guess > @number %>
-    Your Guess is Too High!!!
-  <% elsif @guess < @number %>
-    Your Guess is Too Low!!!
-  <% else %>
-    You Got It, Yay!!!
-  <% end %>
-</p>
+<p><%= @message %></p>

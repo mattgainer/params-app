@@ -1,7 +1,9 @@
 Rails.application.routes.draw do
-  get '/:name', to: 'pages#name'
+  get '/name/:name', to: 'pages#name'
   get '/number/:number', to: 'pages#number'
   get '/setnum', to: 'pages#set_number'
+  get '/numform', to: 'pages#number_form'
+  post '/numform_result', to: 'pages#form_result'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

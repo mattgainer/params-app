@@ -1,0 +1,13 @@
+<%= form_tag '/numform_result', method: :post do %>
+<div>
+  <%= label_tag :guess, "Your Guess Goes Here:" %>
+  <%= text_field_tag :guess %>
+</div>
+<div>
+  <%= label_tag :new, "Do you want a new round? If no, leave blank:" %>
+  <%= text_field_tag :new %>
+</div>
+<div>
+  <%= submit_tag "Input Guess" %>  
+</div>
+<% end %>
